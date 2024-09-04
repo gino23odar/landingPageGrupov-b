@@ -17,6 +17,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="inicio"
     >
       <div className='flex justify-center items-center w-full min-h-[60lvh] bg-conretewhite px-1 md:px-6 mb-2'>
         <div className="relative w-full h-full">

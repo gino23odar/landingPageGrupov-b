@@ -22,6 +22,7 @@ const Servicios = ({ slice }: ServiciosProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="servicios"
       className="flex flex-col w-full relative justify-center min-h-[55lvh] items-start py-6 bg-dullwhite overflow-hidden"
     >
       <div>

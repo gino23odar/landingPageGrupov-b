@@ -16,6 +16,7 @@ const Mision = ({ slice }: MisionProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      id="mision"
       className="flex justify-start items-center w-full"
     >
       <div className="relative flex flex-wrap justify-start items-start w-full min-h-[30lvh] bg-dullwhite mt-4 overflow-hidden z-50">
