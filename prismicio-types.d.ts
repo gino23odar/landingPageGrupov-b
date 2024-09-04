@@ -504,6 +504,16 @@ export interface TestimoniesSliceDefaultPrimaryCardItem {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   comment: prismic.RichTextField;
+
+  /**
+   * calificacion field in *Testimonies → Default → Primary → Card*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonies.default.primary.card[].calificacion
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  calificacion: prismic.KeyTextField;
 }
 
 /**

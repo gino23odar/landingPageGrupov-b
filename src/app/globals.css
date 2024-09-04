@@ -294,11 +294,11 @@ body {
   position: absolute;
   width: 95%;
   height: 95%;
-  background: #000814;
+  background: var(--clr-softBlack);
   border-radius: 20px;
   z-index: 5;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -321,11 +321,23 @@ body {
   opacity: .5;
 }
 
+.testimonial .h3{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 800;
+  pointer-events: none;
+  opacity: .5;
+}
+
 .testimonial .content .h3 {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 10px;
 }
+
 
 .testimonial .content p {
   font-size: 14px;
@@ -346,6 +358,9 @@ body {
 .testimonial:hover .h4 {
   opacity: 0;
 }
+.testimonial:hover .h3 {
+  opacity: 0;
+}
 
 .testimonialBox::before {
   content: "";
@@ -353,8 +368,8 @@ body {
   width: 40%;
   height: 150%;
   background: #40E0D0;
-  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
-  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  background: -webkit-linear-gradient(to right, var(--clr-brightorange), #FF8C00, #40E0D0);
+  background: linear-gradient(to right, var(--clr-brightorange), #FF8C00, #40E0D0);
   transform-origin: center;
   animation: glowBorder 5s linear infinite;
 }

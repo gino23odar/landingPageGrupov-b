@@ -46,7 +46,7 @@ const FooterLink = () =>{
 
 const Footer = () => {
   return (
-    <div className='flex w-full p-2 min-h-[10lvh]'>
+    <div className='flex w-full p-2'>
         <div className='w-full bg-white bg-opacity-10 rounded'>
             <div className="w-full flex justify-around items-center md:flex-row flex-col p-6 border-t-[1px] border-t-[#3F3E45] rounded-lg">
               <div className='flex old:flex-row flex-col items-center justify-evenly overflow-hidden '>

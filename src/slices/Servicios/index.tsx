@@ -30,7 +30,7 @@ const Servicios = ({ slice }: ServiciosProps): JSX.Element => {
       </div>
       <h2 className="text-5xl font-extrabold p-4 mb-4 z-20 bg-concretewhite bg-opacity-55 rounded-br-2xl">{slice.primary.title}</h2>
       
-      <div className="flex flex-col xl:flex-row justify-around w-full overflow-scroll gap-8 text-2xl font-bold z-20">
+      <div className="flex flex-col xl:flex-row justify-around w-full gap-8 text-2xl font-bold z-20">
         {slice.primary.item.map((item, index) => (
           <Card key={index} text={item.servicio +''} image={item.image} setActive={setActive} />
         ))}

@@ -61,6 +61,14 @@
 										}
 									]
 								}
+							],
+							[
+								"calificacion",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "battle",
+									"type": "Text"
+								}
 							]
 						]
 					}
