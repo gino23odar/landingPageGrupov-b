@@ -1,5 +1,4 @@
-# Landing Page Template
-## Welcome to the Landing Page Template repository! 🎉 This project provides a customizable template for creating modern, responsive, and effective landing pages.
+# Landing Page Grupo V&B Hermanos
 
 ## 🚀 Features
 **Responsive Design**: Optimized for all devices - desktops, tablets, and mobiles.  
