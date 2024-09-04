@@ -1,0 +1,69 @@
+{
+  "id": "contacto",
+  "type": "SharedSlice",
+  "name": "Contacto",
+  "description": "Contacto",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          }
+        },
+        "form_name": {
+          "type": "Text",
+          "config": {
+            "label": "Form Name",
+            "placeholder": ""
+          }
+        },
+        "form_number": {
+          "type": "Text",
+          "config": {
+            "label": "Form Number",
+            "placeholder": ""
+          }
+        },
+        "form_email": {
+          "type": "Text",
+          "config": {
+            "label": "Form Email",
+            "placeholder": ""
+          }
+        },
+        "form_consulta": {
+          "type": "Text",
+          "config": {
+            "label": "Form Consulta",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

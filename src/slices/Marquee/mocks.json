@@ -1,0 +1,24 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"slogan1": {
+				"__TYPE__": "FieldContent",
+				"value": "bicycle",
+				"type": "Text"
+			},
+			"slogan2": {
+				"__TYPE__": "FieldContent",
+				"value": "alphabet",
+				"type": "Text"
+			},
+			"slogan3": {
+				"__TYPE__": "FieldContent",
+				"value": "soap",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
