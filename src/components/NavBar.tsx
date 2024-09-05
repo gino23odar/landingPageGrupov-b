@@ -9,12 +9,12 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav aria-label='main navigation' className='flex justify-end md:justify-around items-center bg-concretewhite text-slate-950 w-full pr-1 overflow-hidden overflow-hidden'> 
+    <nav aria-label='main navigation' className='flex justify-end md:justify-around items-center  w-full pr-1 overflow-hidden'> 
       <div className='flex justify-center w-[15%] md:w-[7%] pr-2'>
         <NameLogo />
       </div>
       <div className="absolute inset-0
-       z-10 bg-[url('/textures/bricks.jpg')] opacity-45 mix-blend-soft-light"></div>
+       z-10 bg-[url('/textures/bricks.jpg')] opacity-25 mix-blend-soft-light"></div>
       <ul className='nav-header flex flex-col justify-center w-[80%] bg-softBlack text-concretewhite min-h-[7lvh] mt-2'>
         <div className='flex flex-col items-center justify-center'>
           <button 
@@ -49,11 +49,11 @@ const NavBar = () => {
         </div>
         <DesktopMenu />
       </ul>
-      <div className="bg-concrete">
+      <div className="bg-concretewhite">
         <button
           aria-expanded={open}
           aria-label="Menu abierto"
-          className="hidden sm:block p-2 text-2xl text-slate-950 "
+          className="hidden sm:block p-2 text-2xl text-brightorange "
           onClick={() => setOpen(true)}
         >
           <span>Open</span>
@@ -80,8 +80,8 @@ const NameLogo = () => {
 
 const DesktopMenu = () => {
   return (
-    <div className='relative flex-row justify-center items-center gap-2 bg-transparent py-0 z-50 hidden md:flex'>
-      <ul className='flex flex-row w-full sm:w-[60%] justify-between'>
+    <div className='relative flex-row justify-center items-center gap-2 py-0 z-50 hidden md:flex'>
+      <ul className='flex flex-row w-full sm:w-[60%] justify-between text-concretewhite '>
         <li>
           <span className='text-lg hover:drop-shadow-custom-shadow'>Nosotros</span>
         </li>
