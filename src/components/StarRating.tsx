@@ -5,7 +5,6 @@ import { KeyTextField } from '@prismicio/types';
 const StarRating = ({ rating }: { rating: number }) => {
     const totalStars = 5;
     const stars = [];
-    console.log(rating)
   
     for (let i = 1; i <= totalStars; i++) {
       if (i <= rating) {

@@ -58,7 +58,7 @@ const Contacto = ({ slice }: ContactoProps): JSX.Element => {
       id="contacto"
       className="bg-softBlack w-full px-12 pt-4"
     >
-      <div className="flex flex-wrap justify-around items-center">
+      <div className="flex flex-col-reverse lg:flex-row justify-around items-center">
         <div className="w-1/3">
           <img src="/obreroOk.png" alt="obrero" className="w-3/4 md:w-1/2 h-full object-cover drop-shadow-lg z-50" />
         </div>
@@ -74,8 +74,8 @@ const Contacto = ({ slice }: ContactoProps): JSX.Element => {
               </div>
           }
           <div className="project-wrap flex flex-col bg-black p-8 rounded-xl min-w-[30lvw]">
-              <h2 className='w-full justify-center text-xl text-concretewhite'>
-                  <div>Contáctanos</div>
+              <h2 className='w-full justify-center items-center text-xl text-concretewhite'>
+                  Contáctanos
               </h2>
               <div className="flex flex-col mb-2">
                   <label className="text-concretewhite">{slice.primary.form_name}</label>

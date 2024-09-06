@@ -7,6 +7,7 @@ export const components = {
   hero: dynamic(() => import("./Hero")),
   marquee: dynamic(() => import("./Marquee")),
   mision: dynamic(() => import("./Mision")),
+  nosotros: dynamic(() => import("./Nosotros")),
   servicios: dynamic(() => import("./Servicios")),
   testimonies: dynamic(() => import("./Testimonies")),
 };

@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 
 import clsx from "clsx";
-import NavBar from "@/components/NavBar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const roboto = Roboto({ weight:"400", subsets: ["latin"], display: "swap" });
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(roboto.className, "flex flex-col items-center min-h-screen bg-concretewhite text-softBlack" )}>
-        <NavBar />
+        <Header />
         {children}
         <Footer />
       </body>

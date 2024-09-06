@@ -5,6 +5,7 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 type HomepageDocumentDataSlicesSlice =
+  | NosotrosSlice
   | ContactoSlice
   | ServiciosSlice
   | TestimoniesSlice
@@ -450,6 +451,71 @@ type MisionSliceVariation = MisionSliceDefault;
 export type MisionSlice = prismic.SharedSlice<"mision", MisionSliceVariation>;
 
 /**
+ * Primary content in *Nosotros → Default → Primary*
+ */
+export interface NosotrosSliceDefaultPrimary {
+  /**
+   * Title field in *Nosotros → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nosotros.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Descripcion field in *Nosotros → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nosotros.default.primary.descripcion
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  descripcion: prismic.RichTextField;
+
+  /**
+   * Image field in *Nosotros → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nosotros.default.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for Nosotros Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type NosotrosSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<NosotrosSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Nosotros*
+ */
+type NosotrosSliceVariation = NosotrosSliceDefault;
+
+/**
+ * Nosotros Shared Slice
+ *
+ * - **API ID**: `nosotros`
+ * - **Description**: Nosotros
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type NosotrosSlice = prismic.SharedSlice<
+  "nosotros",
+  NosotrosSliceVariation
+>;
+
+/**
  * Item in *Servicios → Default → Primary → Item*
  */
 export interface ServiciosSliceDefaultPrimaryItemItem {
@@ -672,6 +738,10 @@ declare module "@prismicio/client" {
       MisionSliceDefaultPrimary,
       MisionSliceVariation,
       MisionSliceDefault,
+      NosotrosSlice,
+      NosotrosSliceDefaultPrimary,
+      NosotrosSliceVariation,
+      NosotrosSliceDefault,
       ServiciosSlice,
       ServiciosSliceDefaultPrimaryItemItem,
       ServiciosSliceDefaultPrimary,

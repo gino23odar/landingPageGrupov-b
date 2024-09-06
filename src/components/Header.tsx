@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { createClient } from '@/prismicio';
 
-const Header = () => {
+import NavBar from '@/components/NavBar';
+
+export default async function Header() {
+  const client = createClient();
+  const settings = await client.getSingle("settings")
+
   return (
-    <div className='flex justify-center items-center w-full min-h-[60lvh] bg-conretewhite px-1 md:px-6 mb-2'>
-      <div className="relative w-full h-full">
-        <div className="absolute inset-0 z-20 bg-[url('/textures/bricks.jpg')] opacity-15 mix-blend-soft-light"></div>
-        <div></div>
-      </div>
+    <div>
+      <NavBar settings={settings}/>
     </div>
   )
 }
-
-export default Header

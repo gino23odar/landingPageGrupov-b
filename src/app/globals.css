@@ -97,6 +97,16 @@ body {
     box-shadow: 10px 10px 0 5px #040A1D;
   }
 
+  #menu-span{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--clr-brightorange);
+    border-radius: 100vw;
+  }
+
+/* Hero */
+
 .typewriter{
   white-space: nowrap;
   overflow: hidden;
@@ -506,7 +516,7 @@ body {
   transition: all 0.3s ease-in;
 }
 
-.phone:hover .hidden {
+.phone:hover .hidden-phone {
   opacity: 1;
 }
 
