@@ -114,7 +114,7 @@ const NameLogo = () => {
     >
       <div className='flex justify-center items-center overflow-hidden'>
         {/* LOGO */}
-        <img src='/logos/logo.jpg' alt='logo' className="w-full z-50" />
+        <img src='/logos/logo.jpg' alt='logo' className="w-full z-10" />
       </div>
     </Link>
   )

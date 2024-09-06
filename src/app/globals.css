@@ -214,12 +214,52 @@ body {
   }
 }
 
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: var(--clr-brightorange);
+  border: 5px solid;
+  box-sizing: border-box;
+  position: absolute; /* Changed from relative to absolute */
+  top: 10vh;
+  left: 30vw;
+  z-index: 20;
+  transform-origin: left;
+  animation: l2 4s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  margin: auto;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid;
+  box-sizing: content-box;
+  transform-origin: 50% calc(100% - 4px);
+  animation: inherit;
+}
+.loader::after {
+  inset:auto 0 calc(100% + 2px);
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  transform-origin: 50% calc(200% - 2px);
+}
+@keyframes l2{
+  100% {transform:rotate(1turn)}
+}
+
 /* marquee */
 
 .marquee-content{
   width: 100%;
   overflow: hidden;
   position: relative;
+  z-index: 40;
 }
 
 .marquee-content p{

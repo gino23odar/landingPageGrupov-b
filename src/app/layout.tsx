@@ -6,12 +6,23 @@ import clsx from "clsx";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import { PrismicPreview } from "@prismicio/next";
+import { createClient, repositoryName } from "@/prismicio";
+
 const roboto = Roboto({ weight:"400", subsets: ["latin"], display: "swap" });
 
-export const metadata: Metadata = {
-  title: "business name",
-  description: "business description",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const settings = await client.getSingle("settings");
+
+  return {
+    title: settings.data.meta_title,
+    description: settings.data.meta_description,
+    // openGraph: {
+    //   images: [settings.data.og_image?.url || ""],
+    // },
+  };
+}
 
 export default function RootLayout({
   children,
@@ -24,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );
