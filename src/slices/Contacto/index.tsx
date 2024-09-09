@@ -93,7 +93,7 @@ const Contacto = ({ slice }: ContactoProps): JSX.Element => {
                   <label className="text-concretewhite">{slice.primary.form_consulta}</label>
                   <textarea name="message"  className='rounded-md text-black p-2'/>
               </div>
-              <input type="submit" value="Send" />
+              <input type="submit" value="Enviar" className="bg-dullwhite hover:bg-brightorange rounded-md text-2xl font-bold"/>
           </div>
       </form>
         <PhoneWidget />

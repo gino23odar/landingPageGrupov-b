@@ -91,15 +91,8 @@ const NavBar = ({
         </div>
         <DesktopMenu settings={settings} pathname={pathname}/>
       </ul>
-      <div className="bg-concretewhite">
-        <button
-          aria-expanded={open}
-          aria-label="Menu abierto"
-          className="hidden sm:block p-2 text-2xl text-brightorange "
-          onClick={() => setOpen(true)}
-        >
-          <span>Open</span>
-        </button>
+      <div className="bg-concretewhite hidden md:inline z-20">
+        <img src='/logos/logo2.webp' alt='logo' className="w-16 h-auto z-10 object-contain" />
       </div>
     </nav>
   )
